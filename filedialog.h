@@ -2,16 +2,25 @@
 #define FILEDIALOG_H
 
 #include <QWidget>
+#include <QFileDialog>
+#include <QLabel>
+#include <QPushButton>
+#include <QFormLayout>
 
-class fileDialog : public QWidget
+class FileDialog : public QWidget
 {
     Q_OBJECT
-public:
-    explicit fileDialog(QWidget *parent = 0);
+    public:
+        explicit FileDialog(QWidget *parent = 0);
+        QLabel *selectedFragFile, *selectedMatFile;
+        QPushButton *process, *chooseFragFile, *chooseMatFile;
+        QFormLayout* layout;
+        QString fragFile, matFile;
+    signals:
 
-signals:
-
-public slots:
+    private slots:
+        void slotChooseFragFile();
+        void slotChooseMatFile();
 };
 
 #endif // FILEDIALOG_H

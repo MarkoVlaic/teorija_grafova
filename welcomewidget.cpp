@@ -24,4 +24,5 @@ WelcomeWidget::WelcomeWidget(QWidget *parent) : QWidget(parent)
     setLayout(layout);
 
     connect(manualInput, SIGNAL(clicked()), parent, SLOT(displayManualDialog()));
+    connect(fileInput, SIGNAL(clicked()), parent, SLOT(displayFileDialog()));
 }

@@ -8,10 +8,16 @@ SOURCES += \
     window.cpp \
     welcomewidget.cpp \
     manualinput.cpp \
-    manualdialog.cpp
+    manualdialog.cpp \
+    filedialog.cpp \
+    snphandler.cpp \
+    resultdisplay.cpp
 
 HEADERS += \
     window.h \
     welcomewidget.h \
     manualinput.h \
-    manualdialog.h
+    manualdialog.h \
+    filedialog.h \
+    snphandler.h \
+    resultdisplay.h
